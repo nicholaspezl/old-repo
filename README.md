@@ -1,6 +1,6 @@
 # nicholaspezl.github.io
 ### Education
-Public Policy, Stanford Universityt
+Public Policy, Stanford University
 
 ### Work Experience
 Strategy Manager, Syniverse
