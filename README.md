@@ -1,6 +1,7 @@
 # nicholaspezl.github.io
 ### Education
 B.A. Public Policy, Stanford University
+
 M.A. Public Policy, Stanford University
 
 ### Work Experience
