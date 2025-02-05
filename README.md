@@ -1,6 +1,7 @@
 # nicholaspezl.github.io
 ### Education
 Bachelors and Masters, Public Policy, Stanford University 
+
 Focus on science and technology policy.
 
 ### Work Experience
