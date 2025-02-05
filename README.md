@@ -14,9 +14,10 @@ La Historia de las Familias Larrabure, Unanue, Correa y Veyán
 ### Artwork
 Florence, Italy, 2021
 Watercolor
-![Florence Italy 2021](/docs/assets/Florence.JPG)  
+![Florence Italy 2021](/docs/assets/Florence.JPG)
 
 Venice, Italy, 2020
 Watercolor
 ![Venice Italy 2020](/docs/assets/Venice.jpg)
 
+<img src = "/docs/assets/Florence.JPG" width ="200" /> <img src = "/docs/assets/Venice.jpg" width ="200" />
