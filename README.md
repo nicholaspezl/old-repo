@@ -12,4 +12,4 @@ La Historia de las Familias Larrabure, Unanue, Correa y Veyán
 
 ### Artwork
 Florence, Italy, 2021
-![Florence Italy 2021](/nicholaspezl.github.io/docs/assets/IMG_9864.jpg)
+![Florence Italy 2021](/docs/assets/IMG_9864.jpg)
