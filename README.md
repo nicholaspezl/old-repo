@@ -13,4 +13,4 @@ La Historia de las Familias Larrabure, Unanue, Correa y Veyán
 
 ### Artwork
 
-<img src = "/docs/assets/Florence.JPG" width ="230" /> <img src = "/docs/assets/Venice.jpg" width ="200" />
+<img src = "/docs/assets/Florence.JPG" height ="330" />    <img src = "/docs/assets/Venice.jpg" height ="330" />
