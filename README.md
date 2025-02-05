@@ -1,4 +1,4 @@
-# nicholaspezl.github.io
+# About
 ### Education
 Bachelors and Masters, Public Policy, Stanford University
 
