@@ -1,8 +1,7 @@
 # nicholaspezl.github.io
 ### Education
-B.A. Public Policy, Stanford University
-
-M.A. Public Policy, Stanford University
+Bachelors and Masters, Public Policy, Stanford University 
+Focus on science and technology policy.
 
 ### Work Experience
 Strategy Manager, Syniverse
