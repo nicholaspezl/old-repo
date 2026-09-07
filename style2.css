@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+--concrete: #d8d8ce;
+--concrete-dark: #b8b9ae;
+--green: #53645a;
+--green-dark: #39483f;
+--green-light: #69776d;
+--grey: #6d716c;
+--dark: #252a27;
+--line: #aeb1a9;
+--paper: #e3e3d9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+background: var(--concrete);
+color: var(--dark);
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.55;
+-webkit-font-smoothing: antialiased;
+}
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+/* =========================================
+HEADER
+========================================= */
+
+.site-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 4vw;
+background: var(--green-dark);
+color: #dfe1d9;
+border-bottom: 5px solid var(--green);
+}
+
+.logo {
+font-family: 'IBM Plex Mono', monospace;
+font-size: 12px;
+font-weight: 500;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+}
+
+nav {
+display: flex;
+gap: 28px;
+}
+
+nav a {
+font-family: 'IBM Plex Mono', monospace;
+font-size: 10px;
+text-transform: uppercase;
+letter-spacing: 0.08em;
+color: #c5c9c1;
+}
+
+nav a:hover {
+color: #ffffff;
+}
+
+/* =========================================
+HERO
+========================================= */
+
+.hero {
+min-height: 64vh;
+padding: 8vh 8vw 7vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background: var(--concrete);
+border-bottom: 1px solid var(--line);
+}
+
+.eyebrow {
+margin-bottom: 24px;
+font-family: 'IBM Plex Mono', monospace;
+font-size: 10px;
+text-transform: uppercase;
+letter-spacing: 0.14em;
+color: var(--green-dark);
+}
+
+.hero h1 {
+max-width: 1050px;
+font-size: clamp(58px, 8vw, 116px);
+font-weight: 300;
+line-height: 0.92;
+letter-spacing: -0.055em;
+color: var(--green-dark);
+}
+
+.intro {
+margin-top: 42px;
+max-width: 480px;
+font-size: 17px;
+font-weight: 300;
+line-height: 1.5;
+}
+
+.scroll-link {
+margin-top: 55px;
+font-family: 'IBM Plex Mono', monospace;
+font-size: 10px;
+text-transform: uppercase;
+letter-spacing: 0.12em;
+color: var(--green-dark);
+}
+
+/* =========================================
+SECTIONS
+========================================= */
+
+.section {
+max-width: 1500px;
+margin: 0 auto;
+padding: 90px 8vw;
+border-bottom: 1px solid var(--line);
+}
+
+.section-number {
+margin-bottom: 50px;
+font-family: 'IBM Plex Mono', monospace;
+font-size: 10px;
+text-transform: uppercase;
+letter-spacing: 0.12em;
+color: var(--green-dark);
+}
+
+/* =========================================
+ABOUT
+========================================= */
+
+.about {
+background: var(--paper);
+}
+
+.about .section-content {
+max-width: 760px;
+}
+
+.about .section-content p {
+font-size: clamp(21px, 2.4vw, 31px);
+font-weight: 300;
+line-height: 1.4;
+letter-spacing: -0.02em;
+}
+
+/* =========================================
+PROJECTS
+========================================= */
+
+.projects {
+background: var(--concrete);
+}
+
+.project-list {
+display: flex;
+flex-direction: column;
+gap: 110px;
+}
+
+.project {
+display: grid;
+grid-template-columns: minmax(0, 1.8fr) minmax(250px, 0.7fr);
+gap: 6vw;
+align-items: start;
+}
+
+/* =========================================
+HISTORY
+========================================= */
+
+.history-images {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 10px;
+}
+
+.history-images img {
+display: block;
+width: 100%;
+height: 460px;
+object-fit: contain;
+background: #deded5;
+}
+
+/* =========================================
+ART GALLERY
+========================================= */
+
+.art-gallery {
+columns: 2;
+column-gap: 10px;
+max-width: 900px;
+}
+
+.art-gallery img {
+display: block;
+width: 100%;
+height: auto;
+margin-bottom: 10px;
+break-inside: avoid;
+}
+
+/* =========================================
+PROJECT INFORMATION
+========================================= */
+
+.project-info {
+padding-top: 4px;
+border-top: 2px solid var(--green-dark);
+}
+
+.project-number {
+display: block;
+margin: 15px 0 28px;
+font-family: 'IBM Plex Mono', monospace;
+font-size: 10px;
+color: var(--green-dark);
+letter-spacing: 0.12em;
+}
+
+.project-info h2 {
+max-width: 450px;
+font-size: clamp(26px, 2.8vw, 42px);
+font-weight: 300;
+line-height: 1.08;
+letter-spacing: -0.035em;
+color: var(--green-dark);
+}
+
+.project-location {
+margin-top: 30px;
+font-family: 'IBM Plex Mono', monospace;
+font-size: 10px;
+line-height: 1.6;
+text-transform: uppercase;
+letter-spacing: 0.06em;
+color: var(--grey);
+}
+
+.project-year {
+margin-top: 7px;
+font-family: 'IBM Plex Mono', monospace;
+font-size: 10px;
+color: var(--grey);
+}
+
+/* =========================================
+MORE
+========================================= */
+
+.more {
+padding-top: 120px;
+padding-bottom: 120px;
+background: var(--green);
+color: #dfe2da;
+}
+
+.more .section-number {
+color: #c4cbc3;
+}
+
+.more h2 {
+max-width: 900px;
+font-size: clamp(42px, 5.5vw, 78px);
+font-weight: 300;
+line-height: 1;
+letter-spacing: -0.045em;
+}
+
+/* =========================================
+CONTACT
+========================================= */
+
+.contact {
+max-width: 1500px;
+margin: 0 auto;
+padding: 110px 8vw;
+background: var(--paper);
+text-align: center;
+border-bottom: 1px solid var(--line);
+}
+
+.contact .eyebrow {
+margin-bottom: 18px;
+}
+
+.contact h2 {
+font-size: clamp(54px, 7vw, 94px);
+font-weight: 300;
+line-height: 0.95;
+letter-spacing: -0.05em;
+color: var(--green-dark);
+}
+
+.contact-links {
+display: flex;
+justify-content: center;
+gap: 35px;
+margin-top: 45px;
+}
+
+.contact-links a {
+padding: 9px 16px;
+border: 1px solid var(--green-dark);
+font-family: 'IBM Plex Mono', monospace;
+font-size: 10px;
+text-transform: uppercase;
+letter-spacing: 0.08em;
+}
+
+.contact-links a:hover {
+background: var(--green-dark);
+color: #e3e5de;
+}
+
+/* =========================================
+FOOTER
+========================================= */
+
+footer {
+padding: 22px 8vw;
+background: var(--green-dark);
+color: #aeb5ac;
+font-family: 'IBM Plex Mono', monospace;
+font-size: 9px;
+text-transform: uppercase;
+letter-spacing: 0.08em;
+}
+
+/* =========================================
+MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+.site-header {
+padding: 18px 6vw;
+}
+
+nav {
+gap: 16px;
+}
+
+.hero {
+min-height: 58vh;
+padding: 7vh 6vw;
+}
+
+.hero h1 {
+font-size: clamp(52px, 13vw, 82px);
+}
+
+.section {
+padding: 70px 6vw;
+}
+
+.project {
+grid-template-columns: 1fr;
+gap: 35px;
+}
+
+.history-images {
+gap: 7px;
+}
+
+.history-images img {
+height: 300px;
+}
+
+.art-gallery {
+columns: 2;
+column-gap: 7px;
+}
+
+.art-gallery img {
+margin-bottom: 7px;
+}
+
+.project-info h2 {
+font-size: 31px;
+}
+
+.more,
+.contact {
+padding-top: 85px;
+padding-bottom: 85px;
+}
+
+.contact h2 {
+font-size: 55px;
+}
+
+.contact-links {
+gap: 20px;
+}
+}
