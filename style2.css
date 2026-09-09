@@ -75,14 +75,14 @@ nav a:hover {
 ================================ */
 
 .hero {
-  min-height: 100vh;
+  min-height: auto;
 
   /*
     Deliberately much less space above the title.
     The title now begins close to the top of
     the actual content area.
   */
-  padding: 105px 42px 60px;
+  padding: 105px 42px 45px;
 
   display: flex;
   flex-direction: column;
