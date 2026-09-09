@@ -27,20 +27,18 @@ body {
   line-height: 1.6;
 }
 
-/* --------------------------------
-   HEADER
--------------------------------- */
+/* HEADER */
 
 .site-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 76px;
+  height: 68px;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 
   padding: 0 42px;
 
@@ -49,11 +47,7 @@ body {
 }
 
 .logo {
-  color: var(--text);
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: -0.01em;
+  display: none;
 }
 
 nav {
@@ -73,22 +67,20 @@ nav a:hover {
 }
 
 
-/* --------------------------------
-   HERO
--------------------------------- */
+/* HERO */
 
 .hero {
   min-height: 100vh;
 
-  padding: 76px 42px 60px;
+  padding: 68px 42px 60px;
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .eyebrow {
-  margin: 0 0 32px;
+  margin: 0 0 28px;
 
   font-size: 11px;
   font-weight: 400;
@@ -109,7 +101,7 @@ nav a:hover {
 .intro {
   max-width: 420px;
 
-  margin: 70px 0 0;
+  margin: 55px 0 0;
 
   font-size: 17px;
   line-height: 1.55;
@@ -117,7 +109,7 @@ nav a:hover {
 }
 
 .scroll-link {
-  margin-top: 80px;
+  margin-top: 55px;
 
   color: var(--muted);
   text-decoration: none;
@@ -134,9 +126,7 @@ nav a:hover {
 }
 
 
-/* --------------------------------
-   GENERAL SECTIONS
--------------------------------- */
+/* GENERAL SECTIONS */
 
 .section {
   padding: 150px 42px;
@@ -144,7 +134,7 @@ nav a:hover {
 }
 
 .section-number {
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 
   font-size: 11px;
   font-weight: 400;
@@ -159,9 +149,7 @@ nav a:hover {
 }
 
 
-/* --------------------------------
-   ABOUT
--------------------------------- */
+/* ABOUT */
 
 .about {
   min-height: 65vh;
@@ -187,9 +175,7 @@ nav a:hover {
 }
 
 
-/* --------------------------------
-   PROJECTS
--------------------------------- */
+/* PROJECTS */
 
 .projects {
   padding-bottom: 180px;
@@ -205,12 +191,51 @@ nav a:hover {
   display: block;
 }
 
-.project-image {
-  width: 100%;
+
+/* PROJECT LABEL */
+
+.project-info {
+  margin-bottom: 28px;
+}
+
+.project-info .project-number {
+  display: block;
+
+  margin-bottom: 12px;
+
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.project-info h2 {
+  margin: 0 0 10px;
+
+  max-width: 800px;
+
+  font-size: clamp(25px, 3vw, 43px);
+  line-height: 1.05;
+  font-weight: 300;
+  letter-spacing: -0.035em;
+}
+
+.project-location,
+.project-year {
+  display: inline;
+
+  margin: 0;
+
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.project-year::before {
+  content: " · ";
 }
 
 
-/* HISTORY */
+/* HISTORY IMAGES */
 
 .history-images {
   display: grid;
@@ -226,56 +251,7 @@ nav a:hover {
 }
 
 
-/* --------------------------------
-   PROJECT INFORMATION
--------------------------------- */
-
-.project-info {
-  display: grid;
-  grid-template-columns: 80px 1fr auto;
-
-  align-items: start;
-
-  margin-top: 28px;
-
-  border-top: 1px solid var(--line);
-  padding-top: 18px;
-}
-
-.project-number {
-  font-size: 11px;
-  color: var(--muted);
-}
-
-.project-info h2 {
-  margin: 0;
-
-  max-width: 650px;
-
-  font-size: clamp(25px, 3vw, 43px);
-  line-height: 1.05;
-  font-weight: 300;
-  letter-spacing: -0.035em;
-}
-
-.project-location,
-.project-year {
-  margin: 0;
-
-  font-size: 11px;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-}
-
-.project-year {
-  text-align: right;
-}
-
-
-/* --------------------------------
-   ART
--------------------------------- */
+/* ART */
 
 .art-gallery {
   columns: 2;
@@ -294,9 +270,7 @@ nav a:hover {
 }
 
 
-/* --------------------------------
-   MORE
--------------------------------- */
+/* MORE */
 
 .more {
   min-height: 70vh;
@@ -324,12 +298,10 @@ nav a:hover {
 }
 
 
-/* --------------------------------
-   CONTACT
--------------------------------- */
+/* CONTACT */
 
 .contact {
-  min-height: 75vh;
+  min-height: 65vh;
 
   padding: 150px 42px;
 
@@ -351,7 +323,6 @@ nav a:hover {
 
 .contact-links {
   display: flex;
-  gap: 35px;
 }
 
 .contact-links a {
@@ -371,9 +342,7 @@ nav a:hover {
 }
 
 
-/* --------------------------------
-   FOOTER
--------------------------------- */
+/* FOOTER */
 
 footer {
   padding: 25px 42px;
@@ -385,14 +354,12 @@ footer {
 }
 
 
-/* --------------------------------
-   MOBILE
--------------------------------- */
+/* MOBILE */
 
 @media (max-width: 700px) {
 
   .site-header {
-    height: 64px;
+    height: 60px;
     padding: 0 20px;
   }
 
@@ -405,7 +372,9 @@ footer {
   }
 
   .hero {
-    padding: 64px 20px 35px;
+    min-height: 85vh;
+    padding: 60px 20px 35px;
+    justify-content: center;
   }
 
   .hero h1 {
@@ -413,12 +382,12 @@ footer {
   }
 
   .intro {
-    margin-top: 45px;
+    margin-top: 40px;
     font-size: 15px;
   }
 
   .scroll-link {
-    margin-top: 55px;
+    margin-top: 45px;
   }
 
   .section {
@@ -442,6 +411,14 @@ footer {
     gap: 110px;
   }
 
+  .project-info {
+    margin-bottom: 20px;
+  }
+
+  .project-info h2 {
+    font-size: 28px;
+  }
+
   .history-images {
     grid-template-columns: 1fr;
     gap: 10px;
@@ -449,21 +426,6 @@ footer {
 
   .history-images img {
     height: auto;
-  }
-
-  .project-info {
-    grid-template-columns: 35px 1fr;
-    gap: 12px;
-  }
-
-  .project-info h2 {
-    font-size: 28px;
-  }
-
-  .project-location,
-  .project-year {
-    grid-column: 2;
-    text-align: left;
   }
 
   .art-gallery {
@@ -475,7 +437,7 @@ footer {
   }
 
   .contact {
-    min-height: 70vh;
+    min-height: 60vh;
     padding: 100px 20px;
   }
 
